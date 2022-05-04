@@ -1,0 +1,27 @@
+.container {
+  display: block;
+
+  max-width: 1800px;
+  margin: auto;
+  @media only screen and (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding: 0 16px;
+  }
+  @media only screen and (min-width: 1440px) {
+    grid-template-columns: 15% 85%;
+  }
+  .aside {
+    display: none;
+    @media only screen and (min-width: 800px) {
+      display: inline-block;
+    }
+  }
+  .article {
+    background-color: var(--white);
+
+    @media only screen and (min-width: 800px) {
+      border-radius: 25px;
+    }
+  }
+}
