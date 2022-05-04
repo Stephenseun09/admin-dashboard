@@ -18,7 +18,7 @@ import classes from "./index.module.scss";
 const Navbar = () => {
   const navCtx = useContext(NavCtx);
   const router = useRouter();
-  const navLinks = itemsList(router);
+  const navLinks = itemsList(router, navCtx.onClose);
 
   return (
     <Drawer

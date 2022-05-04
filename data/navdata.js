@@ -5,41 +5,59 @@ import CampaignIcon from "@mui/icons-material/Campaign";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 
-export const itemsList = (router) => [
+export const itemsList = (router, onClose) => [
   {
     text: "Dashboard",
     icon: <DashboardIcon />,
-    onClick: () => router.push("/"),
+    onClick: () => {
+      router.push("/");
+      onClose();
+    },
     path: "/",
   },
   {
     text: "Orders",
     icon: <LibraryBooksIcon />,
-    onClick: () => router.push("#"),
+    onClick: () => {
+      router.push("#");
+      onClose();
+    },
     path: "/orders",
   },
   {
     text: "Products",
     icon: <CheckroomIcon />,
-    onClick: () => router.push("#"),
+    onClick: () => {
+      router.push("#");
+      onClose();
+    },
     path: "/products",
   },
   {
     text: "Marketing",
     icon: <CampaignIcon />,
-    onClick: () => router.push("#"),
+    onClick: () => {
+      router.push("#");
+      onClose();
+    },
     path: "/marketing",
   },
   {
     text: "Rates",
     icon: <StarBorderIcon />,
-    onClick: () => router.push("#"),
+    onClick: () => {
+      router.push("#");
+      onClose();
+    },
     path: "/rates",
   },
   {
     text: "Reports",
     icon: <AssessmentIcon />,
-    onClick: () => router.push("#"),
+    onClick: () => {
+      router.push("#");
+      onClose();
+    },
     path: "/reports",
   },
 ];
