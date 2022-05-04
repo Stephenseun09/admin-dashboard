@@ -61,6 +61,7 @@ export default function CustomizedMenus() {
           inputProps={{ "aria-label": "Without label" }}
           value={age}
           onChange={handleChange}
+          size="small"
         >
           <MenuItem value="yearly">Yearly</MenuItem>
           <MenuItem value="Monthly">Monthly</MenuItem>
